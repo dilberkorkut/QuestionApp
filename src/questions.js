@@ -27,14 +27,14 @@ const questions = [
       "Kuş tüyüyle gıdıklanma korkusu",
     ],
     answer: "Kuş tüyüyle gıdıklanma korkusu",
-    media: "../../src/assets/fobi.jpg",
+    media: "../../src/assets/pictures/fobi.jpg",
   },
   {
     question:
       "Ortalama ömürleri 5 yıl olan Japon balıklarının en uzun yaşayanı Tish, bütün istatistikleri alt üst ederek kaç yıl boyunca hayata tutunmayı başarmıştır?",
     options: ["43", "78", "23", "99"],
     answer: "43",
-    media: "../../src/assets/balik.jpg",
+    media: "../../src/assets/pictures/balik.jpg",
   },
   {
     question:

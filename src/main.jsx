@@ -1,28 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import AppContext from './context/AppContext.jsx'
+import AppContext, { appContext } from './context/AppContext.jsx'
 import { useState } from 'react'
 import Login from './component/login/Login.jsx'
 
 const Root = () => {
-    const [isAppVisible, setIsAppVisible] = useState(false);
-
-  function buttonClicked() {
-    setIsAppVisible(prev => !prev)
-    const button = document.getElementById("start");
-    button.style.visibility = "hidden";
-  }
+  const {isAppVisible} = useContext(appContext);
 
     const app = isAppVisible ? <App /> : <Login />;
     return (<>
-        <div className='login'>
-            <button onClick={buttonClicked} id='start'>
-                Teste Başla
-            </ button>
-            {app}
-        </div>
+        {app}
     </>
 )}
 
