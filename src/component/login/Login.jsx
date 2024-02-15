@@ -8,11 +8,6 @@ function Login() {
 
   function buttonClicked() {
     setIsAppVisible(prev => !prev)
-    const login = document.querySelector(".login");
-    const button = document.querySelector("#start");
-    const para = document.querySelector(".login-para");
-    login.removeChild(button);
-    login.removeChild(para);
   }
 
   return (
@@ -26,4 +21,4 @@ function Login() {
   )
 }
 
-export default Login;
+export default Login

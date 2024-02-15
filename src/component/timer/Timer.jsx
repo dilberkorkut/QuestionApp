@@ -7,7 +7,7 @@ function Timer() {
 
   let {timer, setTimer} = useContext(appContext);
   return (
-    <h2>Time: {timer} </h2>
+    <h2 className='timer'>Time: {timer} </h2>
   )
 }
 
