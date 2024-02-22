@@ -8,6 +8,7 @@ function AppContext({children}) {
     const [isAppVisible, setIsAppVisible] = useState(false);
     const [correctCounter, setCorrectCounter] = useState(0);
     const [chosenAnswers, setChosenAnswers] = useState([]);
+    const [answeredCount, setAnsweredCount] = useState(0);
 
     const contextData = {
         counter,
@@ -19,7 +20,9 @@ function AppContext({children}) {
         correctCounter,
         setCorrectCounter,
         chosenAnswers,
-        setChosenAnswers
+        setChosenAnswers,
+        answeredCount,
+        setAnsweredCount
     }
 
     return (

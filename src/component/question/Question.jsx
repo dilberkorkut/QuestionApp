@@ -27,7 +27,7 @@ function Question() {
           setCounter(counter + 1);
           answer.style.visibility = "hidden";
         }
-      }, 200);
+      }, 1000);
 
       return () => clearInterval(intervalId);
     }, [counter, setCounter, timer, setTimer]);

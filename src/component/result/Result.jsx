@@ -1,24 +1,45 @@
-import React from 'react'
-import { useContext } from 'react'
-import { appContext } from '../../context/AppContext'
+import React from "react";
+import { useContext } from "react";
+import { appContext } from "../../context/AppContext";
+import "./Result.css";
 
 function Result() {
-  const {correctCounter, chosenAnswers} = useContext(appContext)
+  const { correctCounter, chosenAnswers, answeredCount } =
+    useContext(appContext);
 
   return (
-    <div>
-      <h1>{correctCounter}</h1>
-      <ul>
-        {chosenAnswers.map((answer) => {
-          return(
-            <li key={answer}>
-              {answer}
-            </li>
-          )
-        })}
-      </ul>
+    <div className="result-container">
+      <div className="score-container">
+        <div className="results">
+          <h2 className="header">Results</h2>
+          <p className="result">Doğru sayısı: {correctCounter}</p>
+          <p className="result">
+            Yanlış sayısı: {answeredCount - correctCounter}
+          </p>
+          <p className="result">Boş sayısı: {10 - answeredCount}</p>
+        </div>
+        <div className="score">
+          <h2 className="header">Score:</h2>
+          <p className="total">{correctCounter}</p>
+        </div>
+      </div>
+      <div>
+        <h2 className="header">Answers</h2>
+        <ul className="result-list">
+          {chosenAnswers.map((answer) => {
+            return (
+              <li
+                key={answer.id}
+                className={answer.isCorrect ? "correct-answer" : "wrong-answer"}
+              >
+                Soru {answer.id}: {answer.chosenAnswer}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Result
+export default Result;
