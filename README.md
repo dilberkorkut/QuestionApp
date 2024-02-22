@@ -12,7 +12,7 @@ Bu proje, bir test uygulamasıdır. Test, 10 sorudan oluşmaktadır ve kullanıc
 
 - Test sonunda, her soruya verilen yanıtlar ile doğru ve yanlış sayıları kullanıcı ile paylaşılacaktır.
 
-- Canli site linki:  https://vercel.com/dilbers-projects-3d2371e9
+- Canli site linki:  https://question-app-drab-six.vercel.app/
 
 ![](/src/assets/testebasla.png)
 ![](/src/assets/soru-cevap.png)
