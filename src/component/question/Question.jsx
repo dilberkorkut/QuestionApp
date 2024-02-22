@@ -33,8 +33,6 @@ function Question() {
     }, [counter, setCounter, timer, setTimer]);
   }
 
-  //const allQuestionsAnswered = counter > questions.length;
-
   return (
     <div className="question-container">
       <img src={currentQuestion.media} alt="hey" />

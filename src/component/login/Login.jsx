@@ -13,9 +13,9 @@ function Login() {
   return (
     <div className="login">
       <button onClick={buttonClicked} id="start">
-        Teste Başla
+        Teste Başla!
       </button>
-      <p className="login-para">Sokoteste hosgeldiniz! </p>
+      <p className="login-para">Şokoteste hosgeldiniz! </p>
     </div>
   );
 }

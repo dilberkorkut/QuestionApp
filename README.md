@@ -1,8 +1,21 @@
-# React + Vite
+# Question App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, bir test uygulamasıdır. Test, 10 sorudan oluşmaktadır ve kullanıcıya sunulan bilgi ile yönlendirilmektedir. 
 
-Currently, two official plugins are available:
+###
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Giriş ekranında "Teste Başla" adında bir buton bulunmaktadır.
+
+- Butonun id özelliği "start" olarak belirlenmiştir.
+
+- Her soru için 10 saniye boyunca cevap seçenekleri görünmeyecek, ardından kullanıcıya cevap seçenekleri sunulacaktır.
+
+- Test sonunda, her soruya verilen yanıtlar ile doğru ve yanlış sayıları kullanıcı ile paylaşılacaktır.
+
+- Canli site linki:  https://vercel.com/dilbers-projects-3d2371e9
+
+![](/src/assets/testebasla.png)
+![](/src/assets/soru-cevap.png)
+![](/src/assets/score.png)
+
+

@@ -8,7 +8,7 @@
   width: 30%;
   margin-bottom: 36px;
   border-radius: 10px;
-  box-shadow: 6px 5px 13px -1px rgba(0,0,0,0.75);
+  box-shadow: 6px 5px 13px -1px rgba(0, 0, 0, 0.75);
 }
 
 .question-border {
@@ -19,7 +19,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  background-color: rgba(137, 43, 226, 0.096);
+  background-color: rgba(14, 148, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.77);
+  outline: none;
 }
 
 .question-border p {
@@ -41,10 +43,13 @@
   height: 32px;
   border-radius: 100px;
   cursor: pointer;
-  background-color: rgba(137, 43, 226, 0.302);
+  background-color: #fe7936eb;
+
   font-size: 16px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .answer-container button:hover {
-  background-color: rgba(137, 43, 226, 0.422);
+  background-color: rgba(7, 92, 204, 0.511);
 }
